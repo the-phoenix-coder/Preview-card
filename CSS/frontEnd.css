@@ -1,0 +1,65 @@
+:root {
+	--Bright-orange: #e38826;
+	--Dark-cyan: #006970;
+	--Very-dark-cyan: #004241;
+	--p-color: #ffffffbf;
+	--font-family-n: 'Lexend Deca', sans-serif;
+	--font-family-b: 'Big Shoulders Display', 'cursive';
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #F2F2F2;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	padding: 0 20px;
+}
+.container .card {
+	padding: 50px 0 50px 50px;
+}
+.container .one {
+	background-color: var(--Bright-orange);
+}
+.container .one button {
+	color: var(--Bright-orange);
+}
+.container .two {
+	background-color: var(--Dark-cyan);
+}
+.container .two button {
+	color: var(--Dark-cyan);
+}
+.container .three {
+	background-color: var(--Very-dark-cyan);
+}
+.container .three button {
+	color: var(--Very-dark-cyan);
+}
+
+
+.container .card h1 {
+	font-family: var(--font-family-b);
+	color: white;
+	text-transform: uppercase;
+}
+.container .card P {
+	font-family: var(--font-family-n);
+	color: var(--p-color);
+	font-size: 15px;
+	line-height: 1.8;
+	max-width: 200px;
+	margin-bottom: 90px;
+}
+.container .card button {
+	font-family: var(--font-family-n);
+	padding: 15px 20px;
+	border: none;
+	border-radius: 40px;
+	font-size: 15px;
+}
